@@ -12,7 +12,7 @@ export const Manifesto = () => {
         className="flex flex-col items-center"
       >
         {/* Tipografia de Impacto */}
-        <h2 className="text-center font-serif text-6xl font-black uppercase leading-[0.85] tracking-tighter text-white md:text-9xl lg:text-[11rem]">
+        <h2 className="text-center font-serif text-5xl font-black uppercase leading-[0.85] tracking-tighter text-white md:text-9xl lg:text-[11rem]">
           Desordem <br /> <span className="text-[#333]">Sintética</span>
         </h2>
         

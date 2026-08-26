@@ -53,7 +53,7 @@ export const ClimaxFooter = () => {
         </motion.div>
 
         <motion.div 
-          className="absolute bottom-[30%] left-[30%] font-serif text-[12rem] font-black leading-none text-[#111]"
+          className="absolute bottom-[30%] left-[30%] font-serif text-8xl md:text-[12rem] font-black leading-none text-[#111]"
         >
           {String(timeLeft.minutes).padStart(2, '0')}
         </motion.div>
