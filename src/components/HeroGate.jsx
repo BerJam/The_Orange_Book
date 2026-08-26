@@ -7,7 +7,7 @@ export const HeroGate = ({ onUnlock }) => {
   const [status, setStatus] = useState('idle'); // idle, error, success
 
   // 1. CONFIGURAÇÃO DA SENHA AQUI
-  const SECRET_PASSCODE = "friendsnfamily"; 
+  const SECRET_PASSCODE = "FRIENDSNFAMILY"; 
 
   const handleSubmit = (e) => {
     e.preventDefault();
