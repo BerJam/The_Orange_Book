@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Esconde scrollbar global mantendo o estilo limpo */
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+}
