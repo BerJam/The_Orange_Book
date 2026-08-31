@@ -52,7 +52,7 @@ export const HeroGate = ({ onUnlock }) => {
       >
         <div className="max-w-md">
           <motion.p 
-            className="mb-12 font-monospacespace text-[11px] uppercase leading-loose tracking-[3px] text-[#777] md:text-[13px]"
+            className="mb-12 font-monospace text-[11px] uppercase leading-loose tracking-[3px] text-[#777] md:text-[13px]"
             initial={{ y: 20, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ delay: 0.5, duration: 1.5 }}
@@ -68,7 +68,7 @@ export const HeroGate = ({ onUnlock }) => {
           
           <motion.button
             onClick={handleEnter}
-            className="border border-[#111] bg-transparent px-10 py-4 font-monospacespace text-[10px] uppercase tracking-[4px] text-[#111] transition-all hover:bg-[#111] hover:text-white focus:outline-none"
+            className="border border-[#111] bg-transparent px-10 py-4 font-monospace text-[10px] uppercase tracking-[4px] text-[#111] transition-all hover:bg-[#111] hover:text-white focus:outline-none"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 2, duration: 1 }}
@@ -87,7 +87,7 @@ export const HeroGate = ({ onUnlock }) => {
     >
       <div className="w-full max-w-xs text-center">
         <motion.p 
-          className="mb-10 font-monospacespace text-[10px] uppercase tracking-[3px]"
+          className="mb-10 font-monospace text-[10px] uppercase tracking-[3px]"
           animate={{ opacity: [1, 0, 1] }}
           transition={{ duration: status === 'idle' ? 2 : 0.5, repeat: Infinity, ease: 'linear' }}
           style={{ color: status === 'error' ? '#ff0000' : status === 'success' ? '#000000' : '#888888' }}
@@ -108,7 +108,7 @@ export const HeroGate = ({ onUnlock }) => {
             autoComplete="off"
             animate={status === 'error' ? { x: [-10, 10, -10, 10, -5, 5, 0] } : { x: 0 }}
             transition={{ duration: 0.4 }}
-            className={`w-full bg-transparent border-b pb-2 text-center font-monospacespace text-[12px] uppercase tracking-[4px] text-[#111] focus:outline-none transition-colors
+            className={`w-full bg-transparent border-b pb-2 text-center font-monospace text-[12px] uppercase tracking-[4px] text-[#111] focus:outline-none transition-colors
               ${status === 'error' ? 'border-red-500 text-red-500 placeholder:text-red-200' : 
                 status === 'success' ? 'border-[#111] text-[#111]' : 
                 'border-[#ccc] focus:border-[#111] placeholder:text-[#ccc]'}`}
