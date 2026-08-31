@@ -17,7 +17,7 @@ export const Manifesto = () => {
         </h2>
         
         {/* Contraponto Monospace */}
-        <p className="mt-12 max-w-md text-center font-mono text-[10px] uppercase leading-relaxed tracking-[3px] text-[#888]">
+        <p className="mt-12 max-w-md text-center font-monospace text-[10px] uppercase leading-relaxed tracking-[3px] text-[#888]">
           Esta é a jornada para a construção crua do Drop 01 (BLOCOS A00 - A02). Pela mente por trás das direções criativas tomadas.
           Sem polimento. Apenas a fundação técnica do que está por vir.
         </p>

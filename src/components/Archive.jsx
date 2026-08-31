@@ -29,10 +29,10 @@ const AsymmetricImage = ({ item, scrollYProgress }) => {
         
         {/* Hover Disruptivo: Anotações Técnicas Overlay */}
         <div className="absolute inset-0 flex flex-col justify-between bg-black/60 p-4 opacity-0 mix-blend-difference transition-opacity duration-300 group-hover:opacity-100">
-          <span className="font-mono text-[10px] uppercase tracking-[2px] text-[#00ff00]">
+          <span className="font-monospace text-[10px] uppercase tracking-[2px] text-[#00ff00]">
             [RAW_DATA_ACCESS]
           </span>
-          <span className="font-mono text-[12px] uppercase tracking-[1px] text-white">
+          <span className="font-monospace text-[12px] uppercase tracking-[1px] text-white">
             {item.note}
           </span>
         </div>
@@ -56,7 +56,7 @@ export const Archive = () => {
     >
       {/* Marcador de Seção */}
       <div className="sticky top-10 z-10 w-full px-6 mix-blend-difference">
-        <span className="font-mono text-[10px] uppercase tracking-[3px] text-white">
+        <span className="font-monospace text-[10px] uppercase tracking-[3px] text-white">
           /// THE_VAULT.DIR
         </span>
       </div>

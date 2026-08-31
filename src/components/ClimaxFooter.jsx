@@ -41,11 +41,11 @@ export const ClimaxFooter = () => {
           animate={{ opacity: [0.5, 1, 0.5], y: [0, -10, 0] }}
           transition={{ duration: 4, repeat: Infinity }}
         >
-          {String(timeLeft.days).padStart(2, '0')} <span className="font-mono text-[10px] text-[#555]">D</span>
+          {String(timeLeft.days).padStart(2, '0')} <span className="font-monospace text-[10px] text-[#555]">D</span>
         </motion.div>
 
         <motion.div 
-          className="absolute right-[20%] top-[10%] font-mono text-8xl text-white mix-blend-difference"
+          className="absolute right-[20%] top-[10%] font-monospace text-8xl text-white mix-blend-difference"
           animate={{ x: [-5, 5, -5] }}
           transition={{ duration: 0.1, repeat: Infinity, repeatType: 'mirror' }}
         >
@@ -59,7 +59,7 @@ export const ClimaxFooter = () => {
         </motion.div>
 
         <motion.div 
-          className="absolute bottom-[10%] right-[10%] font-mono text-4xl text-white"
+          className="absolute bottom-[10%] right-[10%] font-monospace text-4xl text-white"
           animate={{ scale: [1, 1.05, 1] }}
           transition={{ duration: 1, repeat: Infinity }}
         >
@@ -70,7 +70,7 @@ export const ClimaxFooter = () => {
 
       {/* Formulário de Captura */}
       <div className="w-full max-w-lg z-10">
-        <p className="mb-8 text-center font-mono text-[10px] uppercase tracking-[3px] text-[#888]">
+        <p className="mb-8 text-center font-monospace text-[10px] uppercase tracking-[3px] text-[#888]">
           Notifique-me antes do público geral
         </p>
         <form onSubmit={handleSubmit} className="flex w-full flex-col gap-6">
@@ -78,11 +78,11 @@ export const ClimaxFooter = () => {
             type="email" 
             placeholder="ENTER_EMAIL@ADDRESS.COM" 
             required
-            className="w-full border-b border-[#333] bg-transparent pb-4 text-center font-mono text-[12px] uppercase tracking-[2px] text-white transition-colors focus:border-white focus:outline-none placeholder:text-[#333]"
+            className="w-full border-b border-[#333] bg-transparent pb-4 text-center font-monospace text-[12px] uppercase tracking-[2px] text-white transition-colors focus:border-white focus:outline-none placeholder:text-[#333]"
           />
           <button 
             type="submit"
-            className="group relative w-full overflow-hidden border border-[#333] bg-black py-4 font-mono text-[10px] uppercase tracking-[3px] text-white transition-colors hover:border-white"
+            className="group relative w-full overflow-hidden border border-[#333] bg-black py-4 font-monospace text-[10px] uppercase tracking-[3px] text-white transition-colors hover:border-white"
           >
             <span className="relative z-10 group-hover:text-black transition-colors duration-300">
               Criptografar & Enviar
@@ -95,7 +95,7 @@ export const ClimaxFooter = () => {
       {/* Link Oculto para o E-commerce Original */}
       <a 
         href="/" 
-        className="absolute bottom-6 right-6 font-mono text-[8px] uppercase tracking-[2px] text-[#333] opacity-30 transition-opacity hover:opacity-100 hover:text-white"
+        className="absolute bottom-6 right-6 font-monospace text-[8px] uppercase tracking-[2px] text-[#333] opacity-30 transition-opacity hover:opacity-100 hover:text-white"
       >
         // Return to standard protocol
       </a>
